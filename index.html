@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+
+<link rel="stylesheet" href="./style.css" />
+
+<body>
+
+
+
+    <header>
+        <a href="#" class="logo">Ruhıd Memedzade</a>
+        <ul class="navmenu">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+
+            <li><a href="#">Skills</a></li>
+
+            <li><a href="#">Projects</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+    </header>
+
+    <section class="home">
+
+        <div class="home-text">
+
+            <h2>Hello I'm Ruhıd <i class="ph-bold ph-hand-waving"></i></h2>
+
+            <h3>Front End Developer</h3>
+
+            <p>I'm Front End Developer based in Azerbaıjan,
+
+                and i'm very passionate and dedicated to my work.</p>
+
+            <div class="home-btn">
+
+                <a href="#" class="btn">Contact Info</a>
+
+                <a href="#" onclick="downloadPDF()" class="btn">Download CV <i class="ph ph-read-cv-logo"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="home-img">
+
+            <img
+                src="./ımage/MyPhoto.png" />
+
+        </div>
+
+    </section>
+
+    <div class="socials-icons">
+
+        <a href="https://www.instagram.com/ruhid__memmedzade/"><i class="ph-bold ph-instagram-logo"></i></a>
+
+        <a href="www.linkedin.com/in/ruhid-memmedzade-244a57228"><i class="ph-bold ph-linkedin-logo"></i></a>
+
+        <a href="https://github.com/mruhid"><i class="ph-bold ph-github-logo"></i></a>
+
+    </div>
+
+    <a href="#" class="scroll-btn">Scroll down
+
+    </a>
+
+    <i class="ph-bold ph-arrow-bend-right-down"></i>
+
+
+
+    <script>
+        function downloadPDF() {
+            // Path to the PDF file
+            const pdfPath = './CV/RuhidCV.pdf';
+        
+            // Create a download link
+            const downloadLink = document.createElement('a');
+        
+            // Set the href attribute to the PDF file path
+            downloadLink.href = pdfPath;
+        
+            // Set the file name for the download
+            downloadLink.download = 'RuhidCV.pdf';
+        
+            // Append the link to the body
+            document.body.appendChild(downloadLink);
+        
+            // Trigger the click event to start the download
+            downloadLink.click();
+        
+            // Remove the link from the DOM
+            document.body.removeChild(downloadLink);
+        }
+        </script>
+</body>
+
+</html>
