@@ -26,13 +26,30 @@
 
             <li><a href="./about.html">About</a></li>
 
-            <li><a href="#">Skills</a></li>
+            <li><a href="./skills.html">Skills</a></li>
 
-            <li><a href="#">Projects</a></li>
+            <li><a href="./projects.html">Projects</a></li>
 
             <li><a href="./contact.html">Contact</a></li>
 
         </ul>
+
+        <div class="switch-lang">
+            <div class="current-lang">
+                <img src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"
+                    class="lang-flag">
+                <p class="lang-text">Eng</p>
+            </div>
+            <div class="lang-dropdown">
+                <div class="selecting-lang">
+                    <a style="color: white;" href="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197512.png" class="lang-flag">
+                        <p class="lang-text">Aze</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
 
     </header>
 
@@ -60,8 +77,7 @@
 
         <div class="home-img">
 
-            <img
-                src="./image/MyPhoto.png" />
+            <img src="./image/MyPhoto.png" />
 
         </div>
 
@@ -84,31 +100,105 @@
     <i class="ph-bold ph-arrow-bend-right-down"></i>
 
 
+    <footer>
+        <div class="azercell">
+            <div>
+                <div class="language">
 
+                    <div title="Click to change page language..." class="country">
+                        <div class="flag"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/United-kingdom_flag_icon_round.svg/1024px-United-kingdom_flag_icon_round.svg.png"
+                                alt=""></div>
+                        <div>English</div>
+                        <div class="icon"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools1">
+                <div><a class="active" href="./index.html">Home</a></div>
+                <div><a href="./about.html">About</a></div>
+                <div><a href="./skills.html">Skills</a></div>
+                <div><a href="./projects.html">Projects</a></div>
+                <div><a href="./contact.html">Contact</a></div>
+
+            </div>
+
+            <!-- <div class="tools2">
+                <div><a href="">Azercell sales and service centers</a></div>
+                <div><a href="">Vacancies</a></div>
+            </div> -->
+        </div>
+
+    </footer>
+
+    <footer class="footer2">
+        <div class="number">
+            <div><span class="italic">My Number:</span></div>
+            <div class="numberBox">
+                <span><a style="color: white;" href="tel:+994516944256">+994516944256</a><br></span>
+            </div>
+
+
+        </div>
+
+        <div class="Download ">
+            <div><span class="italic">My Email</span></div>
+            <div class="storeIcons">
+                <div class="icon"><i class="fa-brands fa-at"></i>
+                    <a style="color: white;" href="mailto:ruhidmammadzade@gmail.com"> ruhidmammadzade@gmail.com</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Media">
+            <div class="italic">Follow me</div>
+
+            <div class="media-icon">
+                <div class="icon"><a style="color: white;"
+                        href="https://www.linkedin.com/in/ruhid-memmedzade-244a57228/"><i
+                            class="fa-brands fa-linkedin"></i></a></div>
+                <div class="icon"><a style="color: white;" href="https://www.facebook.com/ruhid.memmedzade.3"><i
+                            class="fa-brands fa-facebook"></i></a></div>
+                <div class="icon"><a style="color: white;"
+                        href="https://www.instagram.com/ruhid__memmedzade?igshid=NjIwNzIyMDk2Mg%3D%3D"><i
+                            class="fa-brands fa-instagram"></i></a></div>
+                <div class="icon"><a style="color: white;" href="https://github.com/mruhid?tab=repositories"><i
+                            class="fa-brands fa-github"></i></a></div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/4803176f5a.js" crossorigin="anonymous"></script>
     <script>
         function downloadPDF() {
             // Path to the PDF file
             const pdfPath = './CV/RuhidCV.pdf';
-        
+
             // Create a download link
             const downloadLink = document.createElement('a');
-        
+
             // Set the href attribute to the PDF file path
             downloadLink.href = pdfPath;
-        
+
             // Set the file name for the download
             downloadLink.download = 'RuhidCV.pdf';
-        
+
             // Append the link to the body
             document.body.appendChild(downloadLink);
-        
+
             // Trigger the click event to start the download
             downloadLink.click();
-        
+
             // Remove the link from the DOM
             document.body.removeChild(downloadLink);
         }
-        </script>
+    </script>
 </body>
 
 </html>
